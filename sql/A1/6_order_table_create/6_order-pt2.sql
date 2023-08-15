@@ -1,0 +1,5 @@
+SET FOREIGN_KEY_CHECKS = 0;
+ALTER TABLE ecommerce_db.order 
+ADD CONSTRAINT FK_Pricing_id
+FOREIGN KEY(PRICING_ID) REFERENCES supplier_pricing(PRICING_ID);
+
